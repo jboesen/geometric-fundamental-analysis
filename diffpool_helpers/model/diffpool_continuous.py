@@ -246,5 +246,5 @@ class TSDiffPool(nn.Module):
                 loss += value
         # incentivize variance
         pred_variance = torch.var(pred, dim=0)
-        loss -= 10 * torch.min(torch.mean(pred_variance), torch.full_like(pred_variance, 4.203855440056107))
+        loss -= 50 * torch.min(torch.mean(pred_variance), torch.full_like(pred_variance, torch.sqrt(4.203855440056107)))
         return loss
