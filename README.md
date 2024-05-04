@@ -1,4 +1,4 @@
- - Model architecture in ``geometric-fundamental-analysis/diffpool_helpers/model/encoder.py``
+ - Main model architecture in ``geometric-fundamental-analysis/diffpool_helpers/model/encoder.py``
  - Data cleaning under ``cleaning_*.ipynb``
    1. ``cleaning_json.ipynb``: imports json-formatted stock data [https://www.kaggle.com/datasets/finnhub/reported-financials](downloaded from Kaggle) and exports dictionary of dataframes
    2. ``cleaning_prices.ipynb``: imports price data from [hd.com/financial-apis/bulk-api-eod-splits-dividends/](EODHD API), normalizes it, and exports into dictionary
